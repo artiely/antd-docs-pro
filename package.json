@@ -1,6 +1,6 @@
 {
-  "name": "templete",
-  "version": "1.1.0",
+  "name": "vuepress-theme-antdocs-pro",
+  "version": "1.0.0",
   "description": "基于antd的vuepress文档",
   "main": "theme/index.js",
   "scripts": {

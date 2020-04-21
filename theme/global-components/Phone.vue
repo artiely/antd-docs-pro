@@ -11,17 +11,12 @@
 
 <script>
 export default {
+  name:'Phone',
   props: {
     src: String
   },
   mounted () {
-
   }
-}
-window.onload = function () {
-  var html =
-    document.getElementById('frame').contentWindow.document.querySelector('html');
-  html.style.background = "#fff";
 }
 </script>
 
