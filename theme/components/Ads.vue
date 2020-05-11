@@ -2,40 +2,74 @@
   <div>
     <div class="ads">
       <!-- Ads state 1 -->
-      <div v-if="data.style === 1" @click="gotoLink" id="ads_1">
+      <div
+        v-if="data.style === 1"
+        @click="gotoLink"
+        id="ads_1"
+      >
         <img :src="data.image" />
         <span :title="data.text">{{ data.text || 'No text' }}</span>
       </div>
       <!-- Ads state 2 -->
-      <div v-else-if="data.style === 2" id="ads_2">
-        <a-carousel autoplay :autoplaySpeed="data.speed || 3000">
-          <div v-for="(item, index) in data.items" :key="index">
-            <a :href="item.link" target="_blank" rel="noopener noreferrer">
-              <img :src="item.image" :title="item.text" />
+      <div
+        v-else-if="data.style === 2"
+        id="ads_2"
+      >
+        <a-carousel
+          autoplay
+          :autoplaySpeed="data.speed || 3000"
+        >
+          <div
+            v-for="(item, index) in data.items"
+            :key="index"
+          >
+            <a
+              :href="item.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                :src="item.image"
+                :title="item.text"
+              />
             </a>
           </div>
         </a-carousel>
       </div>
       <!-- Ads state 3 -->
-      <div v-else id="ads_3">
+      <div
+        v-else
+        id="ads_3"
+      >
         <div class="ads_title">{{ data.title || 'Sponsor' }}</div>
-        <a-button type="primary" ghost @click="popupInfo">{{
+        <a-button
+          type="primary"
+          ghost
+          @click="popupInfo"
+        >{{
           data.btnText || 'Become a Sponsor'
         }}</a-button>
       </div>
     </div>
-    <a-divider v-if="data" dashed id="reset-margin" />
+    <a-divider
+      v-if="data"
+      dashed
+      id="reset-margin"
+    />
   </div>
 </template>
 
 <script>
+// This is a description of the component
 export default {
   name: 'Ads',
   methods: {
-    gotoLink() {
+    // @vuese
+    // Used to manually clear the form
+    gotoLink () {
       window.open(this.data.link);
     },
-    popupInfo() {
+    popupInfo () {
       this.$info({
         title: this.data.msgTitle || 'Message Title',
         content: this.data.msgText || 'Put your text here.',
@@ -45,7 +79,7 @@ export default {
     }
   },
   computed: {
-    data() {
+    data () {
       return this.$themeConfig.ads;
     }
   }
