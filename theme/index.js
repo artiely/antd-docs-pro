@@ -43,7 +43,6 @@ module.exports = (options, ctx) => {
     //   ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
     // ],
     plugins: [
-      ['demo-block'],
       ['@vuepress/active-header-links', options.activeHeaderLinks],
       '@vuepress/plugin-search',
       '@vuepress/plugin-nprogress',
