@@ -7,20 +7,3 @@ html,body,#app,#app>div{
   height:100%
 }
 ```
-::: demo
-```vue
-<template>
-  <div class="box-vue">Vue {{ message }}</div>
-</template>
-<script>
-export default {
-  data: () => ({ message: 'Hello World' })
-}
-</script>
-<style>
-.box-vue { color: red; }
-</style>
-```
-:::
-
-<[vuese](@/theme/components/Ads.vue)

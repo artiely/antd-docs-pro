@@ -10,4 +10,5 @@ export default ({
 }) => {
   Vue.mixin({ store })
   Vue.use(Antd)
+  // window.Vue = Vue
 }

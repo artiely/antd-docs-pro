@@ -18,6 +18,6 @@ module.exports = {
   ...
 }
 ```
-如果你对 `VuePress` 主题配置不是很了解，请点这里：使用主题
+如果你对 `VuePress` 主题配置不是很了解，请点这里：[使用主题](https://vuepress.vuejs.org/zh/theme/using-a-theme.html)
 
 配置完毕后，你就可以直接 `yarn run docs:dev` 或 `npm run docs:dev` 查看效果。

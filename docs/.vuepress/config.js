@@ -9,15 +9,15 @@ module.exports = {
     smoothScroll: true,
     nav: require("./config/nav"),
     sidebar: require("./config/sidebar"),
-    lastUpdated: "Last Updated",
+    lastUpdated: "最后更新时间",
     repo: "https://github.com/artiely/tulip-scroll",
     editLinks: false
   },
   head: [
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js' }],
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
   ],
   plugins: ["copy-code"],
   markdown: {
