@@ -81,6 +81,7 @@ module.exports = (options, ctx) => {
           showInMobile: false // whether to display on the mobile side, default: false.
         }
       ],
+      [require('./plugin/run/index.js')]
     ]
   }
 }

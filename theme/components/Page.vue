@@ -2,9 +2,9 @@
   <main class="page">
     <slot name="top" />
 
-    <Content class="theme-antdocs-content"/>
+    <Content class="theme-antdocs-content "/>
     <div style="margin-top:-100px;padding-bottom:20px">
-    <PageEdit />
+    <!-- <PageEdit /> -->
     <PageNav v-bind="{ sidebarItems }" />
     <slot name="bottom" />
     </div>
